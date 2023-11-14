@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function add()
+            {
+                var a,b,sum;
+                a=parseInt(document.getElementById("num1").value);
+                b=parseInt(document.getElementById("num2").value);
+                sum=(a,b)=>a+b;
+                document.getElementById("answer").value=sum(a,b);
+            }
+            function sub()
+            {
+                var a,b,sub;
+                a=parseInt(document.getElementById("num1").value);
+                b=parseInt(document.getElementById("num2").value);
+                sub=(a,b)=>a-b;
+                document.getElementById("answer").value=sub(a,b);
+            }
+            function mul()
+            {
+                var a,b,pro;
+                a=parseInt(document.getElementById("num1").value);
+                b=parseInt(document.getElementById("num2").value);
+                pro=(a,b)=>a*b;
+                document.getElementById("answer").value=pro(a,b);
+            }
+            function div()
+            {
+                var a,b,quo;
+                a=parseInt(document.getElementById("num1").value);
+                b=parseInt(document.getElementById("num2").value);
+                quo=(a,b)=>a/b;
+                document.getElementById("answer").value=quo(a,b);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <input id="num1"><br>
+        <input id="num2"><br>
+        <button onclick="add()">Addition</button><br>
+        <button onclick="sub()">Subtract</button><br>
+        <button onclick="mul()">Multiply</button><br>
+        <button onclick="div()">Divide</button><br>
+        <p>Answer= <input id="answer"></p>
+    </center>
+    </body>
+</html>
